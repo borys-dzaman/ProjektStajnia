@@ -1,4 +1,5 @@
 git pull
 git add -A
-git commit
+git commit "."
 git push
+PAUSE
