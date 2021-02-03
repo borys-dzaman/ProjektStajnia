@@ -1,0 +1,5 @@
+	Jazdy:
+		rodzaj jazd,
+		czas trwania jazdy,
+		liczebność grupy
+		na podstawie wyżej wymienionych koszt jazdy

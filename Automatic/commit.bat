@@ -1,4 +1,4 @@
 git pull
 git add -A
-git commit -m "Auto commit"
+git commit
 git push

@@ -1,0 +1,27 @@
+Funkcjonalności ("Potrzeby klienta"):
+	1. Kalendarz
+	2. Potwierdzanie odbytych zajęć
+	3. Zmiana jeźdźca na dany dzień
+	4. Szybkie odwołanie wszystkich zajęć na dany dzień np. w przypadku pogody + ew. sms do jeźdźców z dnia
+	5. Rozliczenie miesięczne trenera
+	6. (Powiadomienie sms dla jeźdźców z kończącym się stanem konta)
+	7. Bardzo istotne dla Noemi - "Planer trenera": Po każdych zajęciach notatka do danej osoby z takimi polami:
+		błędy zauważone
+		błędy poprawione
+		nad czym była praca
+		nad czym popracować
+		plus ewentualna opcja wysłania sms do jeźdźca z tymi uwagami
+		
+Teraz bardziej konkretnie to co do bazy danych:
+	1. Jeździec:
+		imię,
+		nazwisko,
+		rodzaj/cena karnetu, (warianty karnetu w sensie za 300 zł, 600 itd ale jeszcze nieznane dokładne kwoty)
+		ważność karnetu, (na sztywno - okres 6 miesięcy czyli od daty zakupu)
+		stan konta, (ile zostało na karnecie jeśli jest karnet lub ile jeśli ktoś wpłaci bez karnetu więcej żeby nie płacić po każdych zajęciach; kolejny wariant to ile na minusie się uzbierało)
+		nr telefonu
+	2. Jazdy:
+		rodzaj jazd,
+		czas trwania jazdy,
+		liczebność grupy
+		na podstawie wyżej wymienionych koszt jazdy
