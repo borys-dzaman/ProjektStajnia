@@ -1,17 +1,5 @@
 @echo off
 SETLOCAL enabledelayedexpansion
-REM ////////////////////////////////////////////////////////////
-REM 
-REM ██╗██████╗ ██╗███████╗       ██████╗  █████╗ ████████╗    ███╗   ███╗ █████╗  ██████╗ ██╗ ██████╗
-REM ██║██╔══██╗██║██╔════╝       ██╔══██╗██╔══██╗╚══██╔══╝    ████╗ ████║██╔══██╗██╔════╝ ██║██╔════╝
-REM ██║██████╔╝██║███████╗       ██████╔╝███████║   ██║       ██╔████╔██║███████║██║  ███╗██║██║     
-REM ██║██╔══██╗██║╚════██║       ██╔══██╗██╔══██║   ██║       ██║╚██╔╝██║██╔══██║██║   ██║██║██║     
-REM ██║██║  ██║██║███████║    ██╗██████╔╝██║  ██║   ██║       ██║ ╚═╝ ██║██║  ██║╚██████╔╝██║╚██████╗
-REM ╚═╝╚═╝  ╚═╝╚═╝╚══════╝    ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝ ╚═════╝
-REM 
-
-REM ////////////////////////////////////////////////////////////
-CALL :DISPLAY_IMAGE IRIS_BAT_MAGIC
 
 REM ////////////////////////////////////////////////////////////
 SET current_date_time=%date% %time%
@@ -65,7 +53,7 @@ cd Documentation/Features
 CALL :BOLD_ECHO " - Pushing all changes from this directory to Github"
 git add --all
 git commit -m "%commit_message%"
-git push origin HEAD:master
+git push origin HEAD:main
 
 ENDLOCAL
 
@@ -78,22 +66,11 @@ CALL :BOLD_ECHO " - Pushing all changes from this directory to Github"
 CALL :BOLD_ECHO_AND_RUN "    git add --all"
 echo [1m      git commit -m "%commit_message%"[0m  
 git commit -m "%commit_message%"
-CALL :BOLD_ECHO_AND_RUN "    git push origin HEAD:master"
+CALL :BOLD_ECHO_AND_RUN "    git push origin HEAD:main"
 
 ENDLOCAL
 
 REM ////////////////////////////////////////////////////////
-SETLOCAL
-CALL :NEXT_COMMAND_ACTION_ECHO "Changing current directory to AutoCommit"
-cd AutoCommit
-
-CALL :BOLD_ECHO " - Pushing all changes from this directory to Github"
-CALL :BOLD_ECHO_AND_RUN "    git add --all"
-echo [1m      git commit -m "%commit_message%"[0m  
-git commit -m "%commit_message%"
-CALL :BOLD_ECHO_AND_RUN "    git push origin HEAD:master"
-
-ENDLOCAL
 
 REM ////////////////////////////////////////////////////////
 
@@ -102,7 +79,7 @@ CALL :BOLD_ECHO " - Pushing all changes from this directory to Github"
 CALL :BOLD_ECHO_AND_RUN "    git add --all"
 echo [1m      git commit -m "%commit_message%"[0m  
 git commit -m "%commit_message%"
-CALL :BOLD_ECHO_AND_RUN "    git push origin HEAD:master"
+CALL :BOLD_ECHO_AND_RUN "    git push origin HEAD:main"
 
 REM Wait until key is pressed is the file was double clicked
 REM ////////////////////////////////////////////////////////////
@@ -292,46 +269,3 @@ REM ////////////////////////////////////////////////////////////
 :DISPLAY_IMAGE
     for /f "delims=: tokens=1*" %%A in ('findstr /b ":::%~1:::" "%~f0"') do (echo.%%B)
 EXIT /B 0
-
-REM Image definitions are below
-REM ////////////////////////////////////////////////////////////
-
-REM ////////////////////////////////////////////////////////////
-::IMAGE:PRESS_KEY_TO_CONTINUE::
-:::PRESS_KEY_TO_CONTINUE::: 
-:::PRESS_KEY_TO_CONTINUE:::       _ _,---._
-:::PRESS_KEY_TO_CONTINUE:::    ,-','       `-.___
-:::PRESS_KEY_TO_CONTINUE:::   /-;'               `._
-:::PRESS_KEY_TO_CONTINUE:::  /\/          ._   _,'o \
-:::PRESS_KEY_TO_CONTINUE::: ( /\       _,--'\,','"`. )
-:::PRESS_KEY_TO_CONTINUE:::  |\      ,'o     \'    //\
-:::PRESS_KEY_TO_CONTINUE:::  |      \        /   ,--'""`-.
-:::PRESS_KEY_TO_CONTINUE:::  :       \_    _/ ,-'         `-._
-:::PRESS_KEY_TO_CONTINUE:::   \        `--'  /                )
-:::PRESS_KEY_TO_CONTINUE:::    `.  \`._    ,'     ________,','
-:::PRESS_KEY_TO_CONTINUE:::      .--`     ,'  ,--` __\___,;'
-:::PRESS_KEY_TO_CONTINUE:::       \`.,-- ,' ,`_)--'  /`.,'
-:::PRESS_KEY_TO_CONTINUE:::        \( ;  | | )      (`-/
-:::PRESS_KEY_TO_CONTINUE:::          `--'| |)       |-/
-:::PRESS_KEY_TO_CONTINUE:::            | | |        | |
-:::PRESS_KEY_TO_CONTINUE:::            | | |,.,-.   | |_
-:::PRESS_KEY_TO_CONTINUE:::            | `./ /   )---`  )
-:::PRESS_KEY_TO_CONTINUE:::           _|  /    ,',   ,-'
-:::PRESS_KEY_TO_CONTINUE:::          ,'|_(    /-<._,' |--,
-:::PRESS_KEY_TO_CONTINUE:::          |    `--'---.     \/ \
-:::PRESS_KEY_TO_CONTINUE:::          |          / \    /\  \
-:::PRESS_KEY_TO_CONTINUE:::        ,-^---._     |  \  /  \  \
-:::PRESS_KEY_TO_CONTINUE:::     ,-'        \----'   \/    \--`.
-:::PRESS_KEY_TO_CONTINUE:::    /            \              \   \
-:::PRESS_KEY_TO_CONTINUE::: 
-REM ////////////////////////////////////////////////////////////
-
-REM ////////////////////////////////////////////////////////////
-::IMAGE:IRIS_BAT_MAGIC::
-:::IRIS_BAT_MAGIC:::    __     __       __       ___                __     __  
-:::IRIS_BAT_MAGIC::: | |__) | /__`     |__)  /\   |      |\/|  /\  / _` | /  ` 
-:::IRIS_BAT_MAGIC::: | |  \ | .__/    .|__) /~~\  |      |  | /~~\ \__> | \__, 
-:::IRIS_BAT_MAGIC:::
-REM ////////////////////////////////////////////////////////////
-
-REM ////////////////////////////////////////////////////////////
