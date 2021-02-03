@@ -1,4 +1,4 @@
-	.Jeździec:
+	Jeździec:
 		imię,
 		nazwisko,
 		rodzaj/cena karnetu, (warianty karnetu w sensie za 300 zł, 600 itd ale jeszcze nieznane dokładne kwoty)

@@ -1,4 +1,4 @@
-.Funkcjonalności ("Potrzeby klienta"):
+Funkcjonalności ("Potrzeby klienta"):
 	1. Kalendarz
 	2. Potwierdzanie odbytych zajęć
 	3. Zmiana jeźdźca na dany dzień
