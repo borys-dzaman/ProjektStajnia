@@ -20,7 +20,10 @@ REM ////////////////////////////////////////////////////////////
 CALL :NEW_LINE_ECHO
 CALL :UNDERLINED_SECTION_ECHO "--- Get the latest Github version of this repository... ---"
 CALL :NEW_LINE_ECHO
-CALL :BOLD_ECHO_AND_RUN "call pull.bat"
+git submodule init
+git submodule update
+git pull
+git submodule foreach git pull origin HEAD:main
 CALL :UNDERLINED_NOTE_ECHO "Doing git pull of the repository and all submodules"
 CALL :NEW_LINE_ECHO
 
