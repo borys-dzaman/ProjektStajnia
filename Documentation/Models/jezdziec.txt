@@ -6,3 +6,7 @@
 	> |DateTime| data zakupu karnetu,
 	> |int| stan konta (ile zostało na karnecie jeśli jest karnet lub ile jeśli ktoś wpłaci bez karnetu więcej żeby nie płacić po każdych zajęciach; kolejny wariant to ile na minusie się uzbierało),
 	> |string| nr telefonu.
+
+----------------------------------------------------------
+
+	> |int| idJeździec
