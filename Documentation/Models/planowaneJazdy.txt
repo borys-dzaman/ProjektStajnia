@@ -1,9 +1,5 @@
 -planowaneJazdy:
-	> model --> idJazdy, //nie ukrywam że jeszcze tego nie widzę w jaki sposób będzie powiązane
+	> model --> idJazdy,
 	> |DateTime| data jazdy,
-	> model --> idJeździec (na tej zaplanowanej jeździe). //tak samo jak wyżej z powiązaniem
-
-//Powiązanie czyli że np >jazdy< i >jeździec< będą jakąś formą struktury i odnosić się do nich będzie 
-//po ich id?
-//i przypisywane tutaj do planowaneJazd będzie to ich id modelu?
-//Póki co tak to rozumiem
+	> model --> idJeździec (na tej zaplanowanej jeździe),
+	> |string| status (odbyte,zaplanowane,odwolane).
