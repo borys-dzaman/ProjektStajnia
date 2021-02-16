@@ -2,4 +2,4 @@
 	> model --> idJazdy,
 	> |DateTime| data jazdy,
 	> model --> idJeździec (na tej zaplanowanej jeździe),
-	> |string| status (odbyte,zaplanowane,odwolane).
+	> |enum| status (none,planned,completed,cancelRequested,cancelled).
