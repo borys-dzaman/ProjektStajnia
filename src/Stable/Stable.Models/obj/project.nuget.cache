@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "E03LnBhR3jVxJ4Ui2W8SLobQfI/kNrIyi1yC2pjlwsXUqBN8i5D+Y7lmqMyCcXkEBPJOgVqhHQOY1IEi0gwJVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Borys\\Source\\Repos\\mateusz-osojca\\ProjektStajnia\\src\\Stable\\Stable.Models\\Stable.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Borys\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Borys\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
