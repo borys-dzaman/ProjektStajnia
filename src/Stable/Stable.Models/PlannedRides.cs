@@ -6,8 +6,8 @@ namespace Stable.Models
 {
 	public class PlannedRides
 	{
-		public int RiderId { get; }
-		public int RideId { get; }
+		public int PlannedRiderId { get; set; }
+		public int PlannedRideId { get; set; }
 		public DateTime RideDate { get; set; }
 		public enum PlannedRideStatus
         {
