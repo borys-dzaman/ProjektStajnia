@@ -13,5 +13,6 @@ namespace Stable.Models
         public DateTime SubscriptionBuyDate { get; set; }
         public int AccountBalance { get; set; }
         public string Phone { get; set; }
+        public int RiderId { get; set; }
     }
 }
