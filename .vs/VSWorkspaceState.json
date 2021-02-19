@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\Stable",
+    "\\src\\Stable\\Stable.Models"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\Stable\\Stable.Models\\PlannedRides.cs",
   "PreviewInSolutionExplorer": false
 }

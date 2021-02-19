@@ -4,18 +4,10 @@ using System.Text;
 
 namespace Stable.Models
 {
-	public class PlannedRides
+	public class PlannedRide
 	{
-		public int RiderId { get; }
-		public int RideId { get; }
-		public DateTime RideDate { get; set; }
-		public enum PlannedRideStatus
-        {
-			None,
-			Planned,
-			Completed,
-			CancelRequested,
-			Cancelled
-        }		
+		public int RiderId { get; set; }
+		public int RideId { get; set; }
+		public DateTime RideDate { get; set; }	
 	}
 }
