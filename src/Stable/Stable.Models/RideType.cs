@@ -11,6 +11,6 @@ namespace Stable.Models
         ShowJumping, //skokowe
         Dressage, //ujeżdżeniowe
         ShowJumpingWithoutSaddle,
-        DressageWithoutSaddle,
+        DressageWithoutSaddle
     }
 }
