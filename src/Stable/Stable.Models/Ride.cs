@@ -6,7 +6,7 @@ namespace Stable.Models
 {
 	public class Ride
 	{
-		RideType type;
+		public RideType Type { get; set; }
 		public TimeSpan RideDuration { get; set; }
 		public int GroupSize { get; set; }
 		public int RideCost { get; set; }

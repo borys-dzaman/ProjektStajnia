@@ -6,7 +6,7 @@ namespace Stable.Models
 {
 	public class PlannedRide
 	{
-		PlannedRideStatus status;
+		public PlannedRideStatus Status { get; set; }
 		public int RiderId { get; set; }
 		public int RideId { get; set; }
 		public DateTime RideDate { get; set; }	
