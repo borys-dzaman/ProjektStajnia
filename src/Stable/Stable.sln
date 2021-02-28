@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stable.Models", "Stable.Models\Stable.Models.csproj", "{6C8E6C11-97BC-430D-B0A8-A132F24C64D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stable.Models", "Stable.Models\Stable.Models.csproj", "{6C8E6C11-97BC-430D-B0A8-A132F24C64D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stable.BusinessLogic", "Stable.BusinessLogic\Stable.BusinessLogic.csproj", "{7CF03EC2-569F-4EE4-A6A2-FF49FE5F0C9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6C8E6C11-97BC-430D-B0A8-A132F24C64D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C8E6C11-97BC-430D-B0A8-A132F24C64D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C8E6C11-97BC-430D-B0A8-A132F24C64D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF03EC2-569F-4EE4-A6A2-FF49FE5F0C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF03EC2-569F-4EE4-A6A2-FF49FE5F0C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF03EC2-569F-4EE4-A6A2-FF49FE5F0C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF03EC2-569F-4EE4-A6A2-FF49FE5F0C9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
