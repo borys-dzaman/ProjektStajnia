@@ -1,9 +1,0 @@
--Jazdy:
-	> |string| rodzaj jazd (skokowe, ujeżdzeniowe, teren, naOklep, rajd), //ewentualnie myślę że jak nie string to po prostu do każdego typu id i po tym id rozpoznawać rodzaj jazdy
-	> |TimeSpan| czas trwania jazdy (30 min, 45 min, 60 min, nieokreślony dla rajdu),
-	> |int| liczebność grupy(na razie z możliwością zwiększenia rozróżnienia małych grup: indywidualne --> 1, grupowe --> >1)
-	> |int| koszt jazdy (na podstawie wyżej wymienionych)
-
------------------------------------------------------------------------------
-	> |int| idJazdy
-	dsdas
