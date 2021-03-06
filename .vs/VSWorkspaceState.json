@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Documentation",
     "\\src",
     "\\src\\Stable",
+    "\\src\\Stable\\Stable.BusinessLogic",
+    "\\src\\Stable\\Stable.BusinessLogic\\Interfaces",
     "\\src\\Stable\\Stable.Models"
   ],
-  "SelectedNode": "\\src\\Stable\\Stable.Models\\PlannedRides.cs",
+  "SelectedNode": "\\Documentation\\Models",
   "PreviewInSolutionExplorer": false
 }
