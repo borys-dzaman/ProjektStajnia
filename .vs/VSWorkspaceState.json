@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Documentation",
+    "\\src",
+    "\\src\\Stable",
+    "\\src\\Stable\\Stable.BusinessLogic",
+    "\\src\\Stable\\Stable.BusinessLogic\\Interfaces",
+    "\\src\\Stable\\Stable.Models"
   ],
-  "SelectedNode": "\\Stable.sln",
+  "SelectedNode": "\\Documentation\\Models",
   "PreviewInSolutionExplorer": false
 }

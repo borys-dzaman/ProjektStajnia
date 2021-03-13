@@ -1,5 +1,0 @@
--planowaneJazdy:
-	> model --> idJazdy,
-	> |DateTime| data jazdy,
-	> model --> idJeździec (na tej zaplanowanej jeździe),
-	> |enum| status (none,planned,completed,cancelRequested,cancelled).
