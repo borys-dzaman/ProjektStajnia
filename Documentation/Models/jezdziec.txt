@@ -1,0 +1,12 @@
+-Jeździec:
+	> |string| imię,
+	> |string| nazwisko,
+	> |int| rodzaj/cena karnetu (warianty karnetu w sensie za 300 zł, 600 itd ale jeszcze nieznane dokładne kwoty),
+	> |DateTime| ważność karnetu (zmiana, nie wiem jak dać okres więc po prostu będzie data końca ważności karnetu = data zakupu + 6 miesięcy),
+	> |DateTime| data zakupu karnetu,
+	> |int| stan konta (ile zostało na karnecie jeśli jest karnet lub ile jeśli ktoś wpłaci bez karnetu więcej żeby nie płacić po każdych zajęciach; kolejny wariant to ile na minusie się uzbierało),
+	> |string| nr telefonu.
+
+----------------------------------------------------------
+
+	> |int| idJeździec
