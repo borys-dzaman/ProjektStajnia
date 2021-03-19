@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Stable.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Stable.Models
+namespace Stable.BusinessLogic.Interfaces
 {
 	public interface IRidesRepository
 	{
