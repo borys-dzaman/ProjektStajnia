@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Stable.Models;
 using Stable.BusinessLogic.Interfaces;
+using System.Linq;
 
 namespace Stable.BusinessLogic.Mocks
 {
@@ -18,20 +19,30 @@ namespace Stable.BusinessLogic.Mocks
 
         public Ride GetById(int RideId)
         {
-            return RidesList.Find(ride => ride.RideId == RideId);
+            Ride RideQuery;
+            RideQuery = RidesList.Where(x => x.RideId == RideId).FirstOrDefault();
+            return RideQuery;
         }
 
         public RidesRepositoryStatus Add(Ride ride)
         {
             try
             {
-                RidesList.Add(ride);
-                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = true };
-                return status;
+                if (!(RidesList.Exists(x => x.RideId == ride.RideId)))
+                {
+                    RidesList.Add(ride);
+                    RidesRepositoryStatus status = new RidesRepositoryStatus { Success = true };
+                    return status;
+                }
+                else
+                {
+                    RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = "Ride with the same Id already exists!" };
+                    return status;
+                }              
             }
-            catch
+            catch(Exception ex)
             {
-                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = "Could not add ride" };
+                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = $"Could not add ride! {ex.Message}"};
                 return status;
             }
         }
@@ -40,13 +51,21 @@ namespace Stable.BusinessLogic.Mocks
         {
             try
             {
-                RidesList.Remove(ride);
-                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = true };
-                return status;
+                if (RidesList.Exists(x => x.RideId == ride.RideId))
+                {
+                    RidesList.Remove(ride);
+                    RidesRepositoryStatus status = new RidesRepositoryStatus { Success = true };
+                    return status;
+                }
+                else
+                {
+                    RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = "Ride does not exist!" };
+                    return status;
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = "Could not remove ride" };
+                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = $"Could not remove ride! {ex.Message}" };
                 return status;
             }
         }
@@ -55,17 +74,23 @@ namespace Stable.BusinessLogic.Mocks
         {
             try
             {
-                /*
-                 * 
-                 * Update implementation
-                 * 
-                 */
-                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = true };
-                return status;
+                if (RidesList.Exists(x => x.RideId == ride.RideId))
+                {
+                    Ride RideToUpdate;
+                    RideToUpdate = RidesList.Where(x => x.RideId == ride.RideId).FirstOrDefault();
+                    RideToUpdate = ride;
+                    RidesRepositoryStatus status = new RidesRepositoryStatus { Success = true };
+                    return status;
+                }
+                else
+                {
+                    RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = "Ride does not exist!" };
+                    return status;
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = "Could not update ride" };
+                RidesRepositoryStatus status = new RidesRepositoryStatus { Success = false, ErrorDescription = $"Could not update ride! {ex.Message}" };
                 return status;
             }
         }
