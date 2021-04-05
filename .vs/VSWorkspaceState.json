@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\Stable",
-    "\\src\\Stable\\Stable.BusinessLogic",
-    "\\src\\Stable\\Stable.BusinessLogic\\Stable.BusinessLogic.Mocks",
-    "\\src\\Stable\\Stable.Models"
+    ""
   ],
-  "SelectedNode": "\\src\\Stable\\Stable.BusinessLogic\\Stable.BusinessLogic.Mocks\\RidesRepositoryMock.cs",
+  "SelectedNode": "\\Stable.sln",
   "PreviewInSolutionExplorer": false
 }

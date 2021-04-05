@@ -19,9 +19,9 @@ namespace Stable.BusinessLogic.Mocks
 
         public Ride GetById(int RideId)
         {
-            Ride RideQuery;
-            RideQuery = RidesList.Where(x => x.RideId == RideId).FirstOrDefault();
-            return RideQuery;
+            Ride rideQuery;
+            rideQuery = RidesList.Where(x => x.RideId == RideId).FirstOrDefault();
+            return rideQuery;
         }
 
         public RidesRepositoryStatus Add(Ride ride)
@@ -76,9 +76,9 @@ namespace Stable.BusinessLogic.Mocks
             {
                 if (RidesList.Exists(x => x.RideId == ride.RideId))
                 {
-                    Ride RideToUpdate;
-                    RideToUpdate = RidesList.Where(x => x.RideId == ride.RideId).FirstOrDefault();
-                    RideToUpdate = ride;
+                    Ride rideToUpdate;
+                    rideToUpdate = RidesList.Where(x => x.RideId == ride.RideId).FirstOrDefault();
+                    rideToUpdate = ride;
                     RidesRepositoryStatus status = new RidesRepositoryStatus { Success = true };
                     return status;
                 }
