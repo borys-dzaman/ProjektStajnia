@@ -1,3 +1,17 @@
+-Features ("Client's needs"):
+	1. Calendar
+	2. Confirmation of completed lessons
+	3. Changing rider for the given day
+	4. Quick cancellation of all lessons on a given day in case of weather
+	5. Coach's monthly account
+	6. (Text message notification to riders with incoming payment due to expiring pass)
+	7. Very important for client - "Coach's planner": After each class a note to the person with fields like this:
+		noticed mistakes
+		corrected mistakes
+		what was worked on
+		what to work on
+		plus a possible option to send an sms to the rider with these remarks
+		
 -Funkcjonalności ("Potrzeby klienta"):
 	1. Kalendarz
 	2. Potwierdzanie odbytych zajęć
